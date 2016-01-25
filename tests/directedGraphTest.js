@@ -1,6 +1,5 @@
 var graphs=require('../lib/graph');
 var assert=require('chai').assert;
-
 describe("add Edges",function(){
 	it("should be able to determine if an edge is present",function(){
 		var g=new graphs.DirectedGraph();
@@ -145,7 +144,7 @@ describe("paths",function(){
 	});
 	it("should determine the farthest vertex from a given vertex for a simple graph",function(){
 		g.addEdge('A','B');
-
+		
 		assert.equal('B',g.farthestVertex('A'));
 	});
 	it("should determine the farthest vertex from a given vertex for a simple graph with two edges",function(){
